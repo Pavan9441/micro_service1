@@ -22,7 +22,7 @@ pipeline {
                 echo 'Pacakeging....'
             }
         }
-        stage('Security Analysis') {
+        stage('Security scaning') {
             steps { 
                 echo 'Blackduck scaning....'
             }
