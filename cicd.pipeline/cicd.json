@@ -1,0 +1,17 @@
+{
+    "buildType": {
+        "name": "netcoredocker",
+        "description": "Build type for .NET Core applications with Docker",
+        "steps": [
+            "Step 1: Restore dependencies",
+            "Step 2: Build .NET Core application",
+            "Step 3: Create Docker image",
+            "Step 4: Push Docker image to a container registry"
+        ],
+        "parameters": {
+            "version": ".NET Core version",
+            "dockerfile": "Path to Dockerfile",
+            "registry": "Container registry URL"
+        }
+    }
+}
