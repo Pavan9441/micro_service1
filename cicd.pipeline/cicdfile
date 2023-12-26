@@ -12,6 +12,16 @@ pipeline {
                 echo 'Testing..'
             }
         }
+        stage('Sonarqubeanalysis') {
+            steps { 
+                echo 'analysing'
+            }
+        }
+        stage('Create Pacakage') {
+            steps { 
+                echo 'Pacakeging....'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
