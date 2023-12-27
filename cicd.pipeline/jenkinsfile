@@ -1,4 +1,12 @@
-// Jenkinsfile
 @Library('Mysharedlibrary') _
+pipeline {
+    agent any
 
-Mysharedlibrary.runPipeline("cicdConfig.json")
+    stages { 
+        stage('Hello') {
+            steps {
+                mySharedFunction()
+            }
+        }
+    }
+}
