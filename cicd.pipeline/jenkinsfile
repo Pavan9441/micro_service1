@@ -1,42 +1,4 @@
+// Jenkinsfile
 @Library('Mysharedlibrary') _
-pipeline {
-    agent any
 
-    stages { 
-        stage('Hello') {
-            steps {
-                mySharedFunction()
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Sonarqubeanalysis') {
-            steps { 
-                echo 'analysing'
-            }
-        }
-        stage('Create Pacakage') {
-            steps { 
-                echo 'Pacakeging....'
-            }
-        }
-        stage('Security scaning') {
-            steps { 
-                echo 'Blackduck scaning....'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-}
+mySharedLibrary.runPipeline("cicdConfig.json")
