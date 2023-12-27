@@ -1,12 +1,5 @@
 @Library('Mysharedlibrary') _
 
 echo "pipeline started"
-def jsonContent = readFile(file: 'cicd.json').trim()
-
-def cicdConfig = new groovy.json.JsonSlurper().parseText(jsonContent)
-
-echo "SonarQube Repository : ${cicdConfig.sonarRepoName}"
-echo "Artifactory Name : ${cicdConfig.artifactoryName}"
-echo "AWS ECR Name : ${cicdConfig.awsEcrName}"
 
 myCICDSteps.runCICDSteps()
