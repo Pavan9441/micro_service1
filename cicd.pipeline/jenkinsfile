@@ -1,18 +1,3 @@
 @Library('Mysharedlibrary') _
-pipeline {
-    agent any
 
-    stages { 
-        stage('Shared Function') {
-            steps {
-                mySharedFunction()
-            }
-        } 
-        stage('Hello') {
-            steps {
-                echo "started the step"
-                mySharedjenkinsfile()
-            }
-        }
-    }
-}
+runCICDSteps()
