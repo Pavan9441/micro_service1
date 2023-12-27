@@ -3,9 +3,15 @@ pipeline {
     agent any
 
     stages { 
-        stage('Hello') {
+        stage('Shared Function') {
             steps {
                 mySharedFunction()
+            }
+        } 
+        stage('Hello') {
+            steps {
+                echo "started the step"
+                mySharedjenkinsfile()
             }
         }
     }
