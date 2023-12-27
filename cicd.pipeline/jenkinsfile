@@ -3,4 +3,4 @@
 
 
 
-mySharedjenkinsfile.runPipeline()
+mySharedjenkinsfile()
