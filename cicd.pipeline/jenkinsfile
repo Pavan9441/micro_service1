@@ -1,3 +1,4 @@
 @Library('Mysharedlibrary') _
 
-runCICDSteps()
+
+myCICDSteps.runCICDSteps()
