@@ -1,6 +1,4 @@
 // Jenkinsfile
 @Library('Mysharedlibrary') _
 
-
-
-mySharedjenkinsfile()
+Mysharedlibrary()
