@@ -1,4 +1,9 @@
 @Library('Mysharedlibrary') _
 
+def cicdConfig = readJSON file: 'cicd.json'
+
+echo "SonarQube Repository: ${cicdConfig.sonarRepoName}"
+echo "Artifactory Name: ${cicdConfig.artifactoryName}"
+echo "AWS ECR Name: ${cicdConfig.awsEcrName}"
 
 myCICDSteps.runCICDSteps()
