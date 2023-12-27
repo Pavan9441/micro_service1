@@ -1,4 +1,6 @@
 // Jenkinsfile
 @Library('Mysharedlibrary') _
 
-Mysharedlibrary.call()
+
+
+mySharedLibrary.runPipeline()
