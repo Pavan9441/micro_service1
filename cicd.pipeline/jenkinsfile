@@ -1,4 +1,4 @@
 // Jenkinsfile
 @Library('Mysharedlibrary') _
 
-mySharedLibrary.runPipeline("cicdConfig.json")
+Mysharedlibrary.runPipeline("cicdConfig.json")
